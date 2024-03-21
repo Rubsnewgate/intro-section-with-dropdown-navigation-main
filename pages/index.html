@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Frontend Mentor challenge"/>
+	<title>Intro Section</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="../styles/desktop.css"/>
+	<link rel="stylesheet" href="../styles/tablet.css" media="(min-width: 768px) and (max-width: 1024px)"/>
+	<link rel="stylesheet" href="../styles/mobile.css" media="(max-width: 540px)"/>
+</head>
+<body>
+	<header class="header">
+		<img class="logo"
+			src="../assets/icons/logo.svg"
+			alt="Company logo"
+		/>
+		<img class="open-menu-icon"
+			src="../assets/icons/icon-menu.svg"
+			alt="Mobile burger menu icon"
+		/>
+		<div class="mobile__menu">
+			<img class="close-menu-icon"
+				src="../assets/icons/icon-close-menu.svg"
+				alt="Close menu icon"
+			/>
+			<div class="widget__list">
+				<details class="widget__wrapper">
+					<summary class="widget">
+						<p> Features </p>
+						<div>
+						</div>
+					</summary>
+					<ul class="widget--open">
+						<li>
+							<img src="../assets/icons/icon-todo.svg" alt="Todo icon"/>
+							<a href="#"> Todo List </a>
+						</li>
+						<li>
+							<img src="../assets/icons/icon-calendar.svg" alt="Calendar icon"/>
+							<a href="#"> Calendar </a>
+						</li>
+						<li>
+							<img src="../assets/icons/icon-reminders.svg" alt="Reminders icon"/>
+							<a href="#"> Reminders </a>
+						</li>
+						<li>
+							<img src="../assets/icons/icon-planning.svg" alt="Planning icon"/>
+							<a href="#"> Planning </a>
+						</li>
+					</ul>
+				</details>
+				<details class="widget__wrapper">
+					<summary class="widget">
+						<p> Company </p>
+						<div>
+						</div>
+					</summary>
+					<ul class="widget--open">
+						<li>
+							<a href="#"> History </a>
+						</li>
+						<li>
+							<a href="#"> Our Team </a>
+						</li>
+						<li>
+							<a href="#"> Blog </a>
+						</li>
+					</ul>
+				</details>
+			</div>
+			<a href="#"> Careers </a>
+			<a href="#"> About </a>
+			<button class="mobil-login-btn"> Login </button>
+			<button class="mobil-register-btn"> Register </button>
+		</div>
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item features--widget">
+					Features
+					<span class="nav-link">
+						<svg class="arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+						</svg>
+						<svg class="arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/>
+						</svg>
+					</span>
+					<div class="features__list">
+						<div class="features__list-item">
+							<img src="../assets/icons/icon-todo.svg" alt="Todo list icon"/>
+							<a href="#"> Todo List </a>
+						</div>
+						<div class="features__list-item">
+							<img src="../assets/icons/icon-calendar.svg" alt="Calendar icon"/>
+							<a href="#"> Calendar </a>
+						</div>
+						<div class="features__list-item">
+							<img src="../assets/icons/icon-reminders.svg" alt="Reminders icon"/>
+							<a href="#"> Reminders </a>
+						</div>
+						<div class="features__list-item">
+							<img src="../assets/icons/icon-planning.svg" alt="Planning icon"/>
+							<a href="#"> Planning </a>
+						</div>
+					</div>
+				</li>
+				<li class="navbar__item company--widget">
+					Company
+					<span class="nav-link">
+						<svg class="arrow-down-two" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+						</svg>
+						<svg class="arrow-up-two" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/>
+						</svg>
+					</span>
+					<div class="company__list">
+						<div class="company__list-item">
+							<a href="#"> History </a>
+						</div>
+						<div class="company__list-item">
+							<a href="#"> Our Team </a>
+						</div>
+						<div class="company__list-item">
+							<a href="#"> Blog </a>
+						</div>
+					</div>
+				</li>
+				<li class="navbar__item">
+					<a href="#"> Careers </a>
+				</li>
+				<li class="navbar__item">
+					<a href="#"> About </a>
+				</li>
+			</ul>
+		</nav>
+		<div class="login">
+			<button class="login-btn"> Login </button>
+			<button class="register-btn"> Register </button>
+		</div>
+	</header>
+	<main class="main-wrapper">
+		<section class="principal-content">
+			<h1 class="principal-content__title"> Make remote work </h1>
+			<p class="principal-content__description">
+				Get your team in sync, no matter your location. Streamline processes, create team
+				rituals, and watch productivity soar.
+			</p>
+			<button class="learn-btn"> Learn more </button>
+			<div class="sponsors">
+				<img src="../assets/icons/client-databiz.svg" alt="Databiz logo"/>
+				<img src="../assets/icons/client-audiophile.svg" alt="Audiophile logo"/>
+				<img src="../assets/icons/client-meet.svg" alt="Meet logo"/>
+				<img src="../assets/icons/client-maker.svg" alt="Maker logo"/>
+			</div>
+		</section>
+		<div class="hero">
+		</div>
+	</main>
+	<script src="../js/main.js"></script>
+</body>
+</html>

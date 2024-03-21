@@ -1,0 +1,25 @@
+@import 'guide.scss';
+
+// Page Header
+.header {
+	height: 8vh;
+	padding: 0 20px;
+}
+
+// Principal Content
+.principal-content {
+	padding-left: 20px;
+}
+.principal-content__title {
+	width: 90%;
+	font-size: 5rem;
+}
+.principal-content__description {
+	width: 90%;
+	font-size: 1.6rem;
+}
+
+// Hero
+.hero {
+	background-position: center;
+}
