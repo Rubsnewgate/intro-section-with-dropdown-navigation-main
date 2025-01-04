@@ -1,0 +1,62 @@
+// colors
+$almost-black: hsl(0, 0%, 8%)
+$medium-gray: hsl(0, 0%, 41%)
+$almost-white: hsl(0, 0%, 98%)
+
+// typography
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap')
+
+$primary-font: "Epilogue", sans-serif
+
+// font-sizes
+$p-size: 1.8rem
+
+// font-weights
+$bold: 700
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	width: 100%
+	min-height: 100vh
+	margin: 0
+	font-family: $primary-font
+	background-color: $almost-white
+
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+
+button
+	border: none
+	border-radius: 10px
+	&:hover
+		cursor: pointer
+
+summary
+	list-style: none
+
+a
+	color: $medium-gray
+	text-decoration: none
+	&:visited
+		color: $medium-gray
+
+// mixins
+@mixin flexbox ($direction: null, $justify: null, $align: null, $gap: null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap
+
+// breakpoints
+@media screen and (max-width: 540px)
+	body
+		position: relative

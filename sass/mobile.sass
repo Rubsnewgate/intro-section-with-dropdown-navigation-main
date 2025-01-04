@@ -1,0 +1,170 @@
+@use 'guide.sass'
+
+// page header
+.header
+	justify-content: space-between
+	height: 60px
+	padding: 0 10px
+
+// main container
+.main-wrapper
+	grid-template-columns: 1fr
+	grid-template-rows: 300px auto
+
+// hero
+.hero
+	grid-area: 1 / 1 / 2 / 2
+	height: 100%
+	background-image: url(../assets/img/image-hero-mobile.png)
+	background-size: cover
+
+// principal content
+.principal-content
+	align-items: center
+	margin-top: 50px
+	padding: 0 10px 50px
+	text-align: center
+
+	&__title
+		width: 100%
+		font-size: 3.6rem
+
+	&__description
+		width: 100%
+		font-size: 1.6rem
+
+.learn-btn
+	border-radius: 15px
+
+.sponsors
+	justify-content: center
+	gap: 20px
+	img
+		width: 20%
+
+// mobile menu
+.open-menu-icon
+	display: block
+
+.mobile__menu
+	@include guide.flexbox (column, null, start, 25px)
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	width: 65vw
+	height: 100vh
+	padding: 15px 10px
+	background-color: guide.$almost-white
+	box-shadow: 0 4px 20px 20px rgba(20, 20, 20, 0.4)
+	a
+		font-size: 1.6rem
+		font-weight: 500
+
+.close-menu-icon
+	align-self: flex-end
+
+.widget__list
+	width: 100%
+	margin-top: 30px
+
+.widget__wrapper
+	margin-bottom: 20px
+
+	&[open]
+		.widget
+			span
+				wbackground-image: url(../assets/icons/icon-arrow-up.svg)
+
+.widget__wrapper:last-of-type
+	margin-bottom: 0
+
+.widget
+	@include guide.flexbox (row, null, center, 10px)
+	p
+		margin: 0
+		font-size: 1.6rem
+		font-weight: 500
+		color: guide.$medium-gray
+
+	div
+		width: 12px
+		height: 12px
+		background-image: url(../assets/icons/icon-arrow-down.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+
+.widget--open
+	padding: 10px 20px
+	li
+		@include guide.flexbox (row, null, center, 10px)
+		margin-bottom: 10px
+		img
+			width: 18px
+			height: 18px
+
+		a
+			font-size: 1.6rem
+			font-weight: 500
+			&:hover
+				color: guide.$almost-black
+
+.mobil-login-btn
+	align-self: center
+	width: 180px
+	height: 40px
+	font-size: 1.4rem
+	color: guide.$medium-gray
+	background-color: guide.$almost-white
+
+.mobil-register-btn
+	align-self: center
+	width: 180px
+	height: 40px
+	font-size: 1.4rem
+	color: guide.$medium-gray
+	background-color: guide.$almost-white
+	border: 2px solid guide.$medium-gray
+
+// breakpoints
+@media screen and (width: 540px)
+	.header
+		height: 80px
+
+	.mobile-menu
+		width: 50px
+		height: 30px
+
+	.main-wrapper
+		grid-template-rows: 420px auto
+
+	.principal-content__title
+		font-size: 5rem
+
+	.principal-content__description
+		font-size: 1.8rem
+
+	.learn-btn
+		width: 200px
+		height: 50px
+
+	.sponsors
+		width: 100%
+
+@media screen and (width: 280px)
+	.principal-content__title
+		font-size: 2.6rem
+
+	.principal-content__description
+		font-size: 1.2rem
+
+	.mobil-register-btn
+		width: 150px
+
+// desktop menu
+.navbar
+	display: none
+
+.login
+	display: none

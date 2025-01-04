@@ -1,0 +1,141 @@
+@use 'guide.sass'
+
+// page header
+.header
+	@include guide.flexbox (row, null, center, 50px)
+	height: 10vh
+	padding: 0 40px
+
+// navbar
+.navbar__list
+	@include guide.flexbox (row, null, null, 30px)
+
+.navbar__item
+	font-size: 1.4rem
+	font-weight: 500
+	color: guide.$medium-gray
+	&:hover
+		color: guide.$almost-black
+		cursor: pointer
+
+	a
+		&:hover
+			color: guide.$almost-black
+			cursor: pointer
+
+.nav-link
+	padding-left: 10px
+
+.login
+	width: auto
+	margin-left: auto
+
+	&-btn
+		width: 90px
+		height: 35px
+		font-size: 1.4rem
+		font-weight: 500
+		color: guide.$medium-gray
+		background-color: guide.$almost-white
+	&:hover
+		color: guide.$almost-black
+
+.register-btn
+	width: 90px
+	height: 35px
+	font-size: 1.4rem
+	font-weight: 500
+	color: guide.$medium-gray
+	background-color: guide.$almost-white
+	border: 2px solid guide.$medium-gray
+	&:hover
+		color: guide.$almost-black
+		border: 2px solid guide.$almost-black
+
+// main container
+.main-wrapper
+	display: grid
+	grid-template-columns: 60% 40%
+	width: 100%
+	height: 90vh
+	padding-top: 20px
+
+// principal content
+.principal-content
+	@include guide.flexbox (column, center, start, 35px)
+	padding-left: 10vw
+
+.principal-content__title
+	width: 70%
+	margin: 0
+	font-size: 6rem
+
+.principal-content__description
+	width: 65%
+	margin: 0
+	font-size: guide.$p-size
+	font-weight: 500
+	color: guide.$medium-gray
+	line-height: 1.4
+
+.learn-btn
+	width: 150px
+	height: 45px
+	font-size: 1.4rem
+	font-weight: guide.$bold
+	color: guide.$almost-white
+	background-color: guide.$almost-black
+	&:hover
+		color: guide.$almost-black
+		background-color: guide.$almost-white
+		border: 2px solid guide.$almost-black
+
+.sponsors
+	@include guide.flexbox (row, null, center, 25px)
+	margin-top: 40px
+
+// hero
+.hero
+	width: 100%
+	height: 90%
+	background-image: url(../assets/img/image-hero-desktop.png)
+	background-size: contain
+	background-repeat: no-repeat
+
+// desktop menu
+.features--widget, .company--widget
+	@include guide.flexbox (row, null, center)
+	position: relative
+
+.features__list, .company__list
+	position: absolute
+	@include guide.flexbox (column, start, null, 15px)
+	top: +30px
+	right: 0
+	width: 160px
+	padding: 20px
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: 0px 0px 20px 4px rgba(20, 20, 20, 0.4)
+	&:hover
+		color: guide.$medium-gray
+
+.features__list-item, .company__list-item
+	@include guide.lexbox (row, null, center, 20px)
+	a
+		&:hover
+			color: guide.$almost-black
+
+	img
+		width: 18px
+		height: 18px
+
+.company__list
+	width: 110px
+
+// mobile menu
+.open-menu-icon
+	display: none
+
+.mobile__menu
+	display: none
